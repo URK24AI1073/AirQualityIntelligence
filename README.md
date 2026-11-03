@@ -57,3 +57,11 @@ The model estimates CO concentration from the supplied input measurements. It is
 
 ## Author
 Student project — B.Tech Artificial Intelligence and Data Science
+## Continuous Integration and Deployment (CI/CD)
+
+- GitHub Actions automatically runs the ETL pipeline.
+- The pipeline verifies the processed air-quality dataset.
+- Render automatically deploys updates when commits are pushed to the main branch.
+- The application is hosted online using Streamlit.
+
+Live Dashboard: https://airqualityintelligence.onrender.com
