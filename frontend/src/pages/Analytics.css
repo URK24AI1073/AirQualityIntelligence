@@ -1,0 +1,158 @@
+
+.analytics-page {
+  min-height: 100vh;
+  padding: 55px 8%;
+  background: #f5f9f6;
+}
+
+.analytics-heading {
+  margin-bottom: 35px;
+}
+
+.analytics-label {
+  color: #13865f;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.analytics-heading h1 {
+  margin: 12px 0;
+  color: #173d31;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.analytics-heading p {
+  color: #71847a;
+  font-size: 14px;
+}
+
+.analytics-panel {
+  padding: 30px;
+  border: 1px solid #e2ece5;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 8px 25px #17352e08;
+}
+
+.analytics-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.analytics-panel-heading h2 {
+  color: #173d31;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.analytics-panel-heading p {
+  margin-top: 8px;
+  color: #71847a;
+  font-size: 13px;
+}
+
+.analytics-panel-heading select {
+  padding: 11px 15px;
+  border: 1px solid #dce9df;
+  border-radius: 8px;
+  background: white;
+  color: #173d31;
+  outline-color: #13865f;
+}
+
+.analytics-chart {
+  height: 300px;
+  margin-top: 35px;
+  padding: 15px 10px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 15px;
+  border-bottom: 1px solid #dce9df;
+}
+
+.chart-column {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.chart-value {
+  color: #536b5e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.chart-bar-area {
+  width: min(55px, 75%);
+  height: 78%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.chart-bar {
+  width: 100%;
+  min-height: 5px;
+  border-radius: 7px 7px 0 0;
+  transition: height 0.3s ease;
+}
+
+.chart-month {
+  padding: 9px 0;
+  color: #71847a;
+  font-size: 12px;
+}
+
+.chart-unit {
+  margin-top: 20px;
+  color: #71847a;
+  font-size: 12px;
+}
+
+.analytics-note {
+  margin-top: 20px;
+  padding: 17px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid #dce9df;
+  border-radius: 10px;
+  background: #edf7f0;
+  color: #28614b;
+}
+
+.analytics-note i {
+  font-size: 18px;
+}
+
+.analytics-note p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .analytics-page {
+    padding: 35px 5%;
+  }
+
+  .analytics-heading h1 {
+    font-size: 28px;
+  }
+
+  .analytics-panel {
+    padding: 20px;
+  }
+
+  .analytics-chart {
+    height: 240px;
+  }
+}

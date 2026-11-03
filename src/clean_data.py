@@ -40,11 +40,17 @@ if "Date" in df.columns and "Time" in df.columns:
         df["Date"].astype(str).str.strip()
         + " "
         + df["Time"].astype(str).str.strip(),
-        dayfirst=True,
+        format="%d/%m/%Y %H.%M.%S",
         errors="coerce"
     )
 
-# Save the cleaned dataset
+# Data quality checks
+duplicate_count = df.duplicated().sum()
+df = df.drop_duplicates()
+missing_values = df.isnull().sum().sum()
+print("Duplicate rows removed:", duplicate_count)
+print("Total missing values:", missing_values)
+print("Valid timestamps:", df["Timestamp"].notna().sum())# Save the cleaned dataset
 output_file = PROCESSED_DIR / "air_quality_cleaned.csv"
 df.to_csv(output_file, index=False)
 
