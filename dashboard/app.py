@@ -402,3 +402,4 @@ st.divider()
 st.caption(
     "Air Quality Intelligence | Cloud Computing for Data Analytics"
 )
+
